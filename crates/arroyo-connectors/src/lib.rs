@@ -22,6 +22,7 @@ pub mod impulse;
 pub mod kafka;
 pub mod kinesis;
 pub mod mqtt;
+pub mod mqtt5;
 pub mod nats;
 pub mod nexmark;
 pub mod polling_http;
