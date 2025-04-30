@@ -14,7 +14,7 @@ use rumqttc::mqttbytes::QoS;
 use rumqttc::Outgoing;
 use rumqttc::{Event as MqttEvent, Incoming};
 
-use crate::mqtt::{create_connection, MqttConfig};
+use crate::mqtt5::{create_connection, MqttConfig};
 use arroyo_operator::context::{SourceCollector, SourceContext};
 use arroyo_operator::operator::SourceOperator;
 use arroyo_operator::SourceFinishType;
