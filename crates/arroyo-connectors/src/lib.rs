@@ -46,6 +46,7 @@ pub fn connectors() -> HashMap<&'static str, Box<dyn ErasedConnector>> {
         Box::new(kafka::KafkaConnector {}),
         Box::new(kinesis::KinesisConnector {}),
         Box::new(mqtt::MqttConnector {}),
+        Box::new(mqtt5::MqttConnector {}),
         Box::new(nats::NatsConnector {}),
         Box::new(nexmark::NexmarkConnector {}),
         Box::new(polling_http::PollingHTTPConnector {}),

@@ -122,15 +122,15 @@ impl Connector for MqttConnector {
     type TableT = MqttTable;
 
     fn name(&self) -> &'static str {
-        "mqtt"
+        "mqtt5"
     }
 
     fn metadata(&self) -> arroyo_rpc::api_types::connections::Connector {
         arroyo_rpc::api_types::connections::Connector {
-            id: "mqtt".to_string(),
-            name: "Mqtt".to_string(),
+            id: "mqtt5".to_string(),
+            name: "MQTT5".to_string(),
             icon: ICON.to_string(),
-            description: "Read and write from a mqtt cluster".to_string(),
+            description: "Read and write from a MQTT 5 cluster".to_string(),
             enabled: true,
             source: true,
             sink: true,

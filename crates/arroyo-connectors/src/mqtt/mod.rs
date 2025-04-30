@@ -128,7 +128,7 @@ impl Connector for MqttConnector {
     fn metadata(&self) -> arroyo_rpc::api_types::connections::Connector {
         arroyo_rpc::api_types::connections::Connector {
             id: "mqtt".to_string(),
-            name: "Mqtt".to_string(),
+            name: "MQTT".to_string(),
             icon: ICON.to_string(),
             description: "Read and write from a mqtt cluster".to_string(),
             enabled: true,
